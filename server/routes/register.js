@@ -3,9 +3,13 @@ const router = express.Router();
 const User = require("../Model/User");
 
 router.post("/register", function (req, res) {
-  const { firstName, lastName, email, city, occupation, bio } = req.body;
+  let { firstName, lastName, email, city, occupation, bio } = req.body;
 
-  const user = new User({
+  if (!firstName || !lastName || !email || !city || !occupation || !bio) {
+    return res.status(422).json({ error: "Please Fill all the Fields" });
+  }
+
+  let user = new User({
     firstName,
     lastName,
     email,
