@@ -2,46 +2,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Multistep Form
 
-- This is simple multistep form with react and react-bootstrap.
+- This is simple multistep form with mongodb, express, react, nodejs and react-bootstrap.
 - This project/repository based on video tutorial of @bradtraversy on Traversy Media Youtube Channel with some modification of mine.
+- This project contains two folder client and server.
 
 ## Dependencies
 
-- Please Install dependencies for this project using npm install command this will automatically install dependencies for this project.
+- Please Install dependencies for client and server in their respective folder using npm install command this will automatically install dependencies for this project.
 
-## Available Scripts
+## Server
 
-In the project directory, you can run:
+1. To start Server just run command in Server folder nodemon but make sure that you install nodemon globally.
+2. To intsall nodemon globally use npm install -g nodemon this command.
+3. server will run on port 5000.
 
-### `npm start`
+## Client
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. To start client run command in client folder npm start
+2. Client will run on port 3000.
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
