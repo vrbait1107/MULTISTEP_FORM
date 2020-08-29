@@ -8,7 +8,31 @@ import {
   Table,
 } from "react-bootstrap";
 
+import axios from "axios";
+
 const Confirm = (props) => {
+  const postData = () => {
+    axios({
+      method: "post",
+      url: "/register",
+      data: {
+        firstName: props.values.firstName,
+        lastName: props.values.lastName,
+        email: props.values.email,
+        city: props.values.city,
+        bio: props.values.bio,
+        occupation: props.values.occupation,
+      },
+    })
+      .then((response) => {
+        console.log(response);
+        props.nextStep();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <Container className="mt-5">
       <Breadcrumb>Confirm Your Details</Breadcrumb>
@@ -46,7 +70,12 @@ const Confirm = (props) => {
             Back
           </Button>
 
-          <Button variant="primary" onClick={props.nextStep}>
+          <Button
+            variant="primary"
+            onClick={() => {
+              postData();
+            }}
+          >
             Confirm & Continue
           </Button>
         </Col>
