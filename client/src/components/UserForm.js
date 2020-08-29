@@ -78,7 +78,7 @@ class UserForm extends React.Component {
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
-            values={this.values}
+            values={values}
           />
         );
       default:
