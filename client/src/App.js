@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import UserForm from "./UserForm";
+import UserForm from "./components/UserForm";
 
 const App = () => {
   return (

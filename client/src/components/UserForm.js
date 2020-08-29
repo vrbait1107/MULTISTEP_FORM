@@ -1,9 +1,9 @@
 import React from "react";
-import FormUserDetails from "./FormUserDetails";
-import FormPersonalDetails from "./FormPersonalDetails";
-import Confirm from "./Confirm";
-import Success from "./Success";
-import "./App.css";
+import FormUserDetails from "./components/FormUserDetails";
+import FormPersonalDetails from "./components/FormPersonalDetails";
+import Confirm from "./components/Confirm";
+import Success from "./components/Success";
+import "../App.css";
 
 class UserForm extends React.Component {
   constructor(props) {
