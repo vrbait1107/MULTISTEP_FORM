@@ -12,23 +12,29 @@ import axios from "axios";
 
 const Confirm = (props) => {
   const postData = () => {
+    const dataValue = {
+      firstName: props.values.firstName,
+      lastName: props.values.lastName,
+      email: props.values.email,
+      city: props.values.city,
+      bio: props.values.bio,
+      occupation: props.values.occupation,
+    };
+
     axios({
       method: "post",
-      url: "/register",
-      data: {
-        firstName: props.values.firstName,
-        lastName: props.values.lastName,
-        email: props.values.email,
-        city: props.values.city,
-        bio: props.values.bio,
-        occupation: props.values.occupation,
+      url: "http://127.0.0.1:8000/api/registerController",
+      headers: {
+        "content-type": "application/json",
       },
+      data: JSON.stringify(dataValue),
     })
       .then((response) => {
         console.log(response);
         props.nextStep();
       })
       .catch((err) => {
+        alert(err);
         console.log(err);
       });
   };
