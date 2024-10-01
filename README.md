@@ -1,5 +1,3 @@
-# MERN TECHNOLOGY
-
 ## Multistep Form
 
 - This is a simple multi-step form that uses React for the front end and either Laravel or a Node.js-Express API for the back end.
